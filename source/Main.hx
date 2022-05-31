@@ -20,6 +20,7 @@ class Main extends Sprite
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	public static var fpsVar:FPS;
+	public static var memoryCounter:MemoryCounter;
 
 	public static var path:String = System.applicationStorageDirectory;	
 
@@ -81,6 +82,13 @@ class Main extends Sprite
 		if(fpsVar != null) {
 			fpsVar.visible = ClientPrefs.showFPS;
 		}
+		
+		memoryCounter = new MemoryCounter(10, 3, 0xffffff);
+		addChild(memoryCounter);
+		if(memoryCounter != null) {
+			memoryCounter.visible = ClientPrefs.showFPS;
+		}
+
 
 		#if html5
 		FlxG.autoPause = false;
