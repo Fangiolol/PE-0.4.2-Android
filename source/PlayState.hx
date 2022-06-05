@@ -2012,11 +2012,11 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '? (N/A)') {
-			scoreTxt.text = 'Pontos: ' + songScore +  ' // Precisão: ' + ratingString;
+			scoreTxt.text = 'Pontos: ' + songScore + ' // Precisão: ' + ratingString;
 			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\nErros: 0\n haha kek';
 		} else {
 			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nErros: ${songMisses}\nkek';
-			scoreTxt.text = 'Pontos: ' + ' // Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
+			scoreTxt.text = 'Pontos: ' + songScore + ' // Precisão: ' + ratingString + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)';
 		}
 
 		if(cpuControlled) {
@@ -3150,8 +3150,6 @@ class PlayState extends MusicBeatState
 		if(!practiceMode && !cpuControlled) {
 			songScore += score;
 			songHits++;
-			
-			if (ClientPrefs.violence){FlxG.sound.play(Paths.sound('osu'), ClientPrefs.osusom);}
 
 			RecalculateRating();
 			if(scoreTxtTween != null && judgementCounterTween != null) {
