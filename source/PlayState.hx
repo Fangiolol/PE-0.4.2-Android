@@ -223,9 +223,11 @@ class PlayState extends MusicBeatState
 	public var songMisses:Int = 0;
 	public var ghostMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var judgementCounter:FlxText;
 	var timeTxt:FlxText;
 	var CreditText:FlxText;
 	var scoreTxtTween:FlxTween;
+	var judgementCounterTween:FlxTween;
 	var versionName:FlxText;
 
 	public static var campaignScore:Int = 0;
@@ -929,6 +931,14 @@ class PlayState extends MusicBeatState
 			versionName.setFormat(Paths.font("impact.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			versionName.scrollFactor.set();
 			add(versionName);
+	
+		judgementCounter = new FlxText(20, 0, 0, "", 20);
+		judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		judgementCounter.borderSize = 2;
+		judgementCounter.borderQuality = 2;
+		judgementCounter.scrollFactor.set();
+		judgementCounter.screenCenter(Y);
+		if(!ClientPrefs.hideHud) {add(judgementCounter);}
 
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "Olá eu tenho Problemas em Habilidade", 32);
 		botplayTxt.setFormat(Paths.font("impact.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -950,6 +960,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.cameras = [camHUD];
 		versionName.cameras = [camOther];
 		botplayTxt.cameras = [camHUD];
+		judgementCounter.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
@@ -2001,9 +2012,11 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '? (N/A)') {
-			scoreTxt.text = 'Pontos: ' + songScore + ' // Erros: ' + songMisses + ' // Vida: ' + healthBar.percent + ' // Precisão: ' + ratingString;
+			scoreTxt.text = 'Pontos: ' + songScore +  ' // Precisão: ' + ratingString;
+			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\nErros: 0\n haha kek';
 		} else {
-			scoreTxt.text = 'Pontos: ' + songScore + ' // Erros: ' + songMisses + ' // Vida: ' + healthBar.percent + ' // Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
+			judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nErros: ${songMisses}\nkek';
+			scoreTxt.text = 'Pontos: ' + ' // Precisão: ' + ratingString + ' ' + Math.floor(ratingPercent * 100) + '%';
 		}
 
 		if(cpuControlled) {
@@ -3137,8 +3150,12 @@ class PlayState extends MusicBeatState
 		if(!practiceMode && !cpuControlled) {
 			songScore += score;
 			songHits++;
+			
+			if (ClientPrefs.violence){FlxG.sound.play(Paths.sound('osu'), ClientPrefs.osusom);}
+
 			RecalculateRating();
-			if(scoreTxtTween != null) {
+			if(scoreTxtTween != null && judgementCounterTween != null) {
+				judgementCounterTween.cancel();
 				scoreTxtTween.cancel();
 			}
 			scoreTxt.scale.x = 1.1;
@@ -3147,9 +3164,15 @@ class PlayState extends MusicBeatState
 				onComplete: function(twn:FlxTween) {
 					scoreTxtTween = null;
 				}
+				});
+			judgementCounter.scale.x = 1.1;
+			judgementCounter.scale.y = 1.1;
+			judgementCounterTween = FlxTween.tween(judgementCounter.scale, {x: 1, y: 1}, 0.2, {
+				onComplete: function(twn:FlxTween) {
+					judgementCounterTween = null;
+				}
 			});
 		}
-
 		/* if (combo > 60)
 				daRating = 'sick';
 			else if (combo > 12)
