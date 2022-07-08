@@ -752,18 +752,22 @@ switch (curStage)
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
 		
-		switch(charSelection){
-		case 0:
-		boyfriend = new Boyfriend(0, 0, 'bf');
-		case 1:
-		boyfriend = new Boyfriend(0, 0, 'bf-car');
-		case 2:
-		boyfriend = new Boyfriend(0, 0, 'bf-neo');
-		case 3:
-		boyfriend = new Boyfriend(0, 0, 'fang');
-		default:
-		boyfriend = new Boyfriend(0, 0, 'bf');
+		//switch(charSelection){
+		//case 0:
+	
+		if(ClientPrefs.optimizedMode){
+			gf = new Character(0, 0, 'pedrootimizacoes');
+		} else {
+		gf = new Character(0, 0, gfVersion);
 		}
+		startCharacterPos(gf);
+		gf.scrollFactor.set(0.95, 0.95);
+		gfGroup.add(gf);
+
+		dad = new Character(0, 0, SONG.player2);
+		startCharacterPos(dad, true);
+		dadGroup.add(dad);
+
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
 		startCharacterPos(boyfriend);
 		boyfriendGroup.add(boyfriend);
