@@ -506,13 +506,14 @@ switch (curStage)
 					CoolUtil.precacheSound('dancerdeath');
 				}
 
-                if(ClientPrefs.cenoptim) {
+    
 				limo = new BGSprite('limo/limoDrive', -120, 550, 1, 1, ['Limo stage'], true);
 
 				fastCar = new BGSprite('limo/fastCarLol', -300, 160);
-                }
+           
 				fastCar.active = true;
 				limoKillingState = 0;
+}
 
 			case 'mall': //Week 5 - Cocoa, Eggnog
                 if(ClientPrefs.cenoptim) {
@@ -520,6 +521,7 @@ switch (curStage)
 				bg.setGraphicSize(Std.int(bg.width * 0.8));
 				bg.updateHitbox();
 				add(bg);
+			}
 
 					upperBoppers = new BGSprite('christmas/upperBop', -240, -90, 0.33, 0.33, ['Upper Crowd Bob']);
 					upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
@@ -546,7 +548,7 @@ switch (curStage)
 
 				santa = new BGSprite('christmas/santa', -840, 150, 1, 1, ['santa idle in fear']);
 				add(santa);
-                }
+                
 				CoolUtil.precacheSound('Lights_Shut_off');
 
 			case 'mallEvil': //Week 5 - Winter Horrorland
