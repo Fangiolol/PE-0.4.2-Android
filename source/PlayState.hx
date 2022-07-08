@@ -510,10 +510,10 @@ switch (curStage)
 				limo = new BGSprite('limo/limoDrive', -120, 550, 1, 1, ['Limo stage'], true);
 
 				fastCar = new BGSprite('limo/fastCarLol', -300, 160);
-                }
+		}
 				fastCar.active = true;
 				limoKillingState = 0;
-
+}
 			case 'mall': //Week 5 - Cocoa, Eggnog
                 if(ClientPrefs.cenoptim) {
 				var bg:BGSprite = new BGSprite('christmas/bgWalls', -1000, -500, 0.2, 0.2);
