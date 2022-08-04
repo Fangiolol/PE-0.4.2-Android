@@ -374,7 +374,18 @@ class PlayState extends MusicBeatState
 		switch (curStage) 
 		{
 			case 'stage': //Week 1
-				if(ClientPrefs.cenoptim) {
+				if(ClientPrefs.optimizedMode) { //Bora fangio
+                bg.visible = false;
+                stageFront.visible = false;
+                stageLight.visible = false;
+                stageCurtains.visible = false;
+                } else {
+                //When você tem medo de f.. todo o code 
+                bg.visible = true;
+                stageFront.visible = true;
+                stageLight.visible = true;
+                stageCurtains.visible = true;
+                }   
 				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
 				add(bg);
 
@@ -400,15 +411,21 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			}
+	}
+}
 
-			case 'spooky': //Week 2
-				if(ClientPrefs.cenoptim) {
-		
-				if(!ClientPrefs.lowQuality) {
-					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
+case 'spooky': //Week 2
+				if(ClientPrefs.optimizedMode) { //Bora fangio
+					halloweenBG.visible = false;
+					halloweenWhite.visible = false;
 				} else {
-					halloweenBG = new BGSprite('halloween_bg_low', -200, -100);
+					halloweenBG.visible = true;
+					halloweenWhite.visible = true;
 				}
+			}	
+		}               
+		
+					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
 				add(halloweenBG);
 
 				halloweenWhite = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);
@@ -419,14 +436,29 @@ class PlayState extends MusicBeatState
 				//PRECACHE SOUNDS
 				CoolUtil.precacheSound('thunder_1');
 				CoolUtil.precacheSound('thunder_2');
-			}
 
 			case 'philly': //Week 3
-		if(ClientPrefs.cenoptim) {
+				if(ClientPrefs.optimizedMode) { //Bora fangio
+                bg.visible = false;
+                city.visible = false;
+                phillyCityLights.visible = false;
+                light.visible = false;
+                streetBehind.visible = false;
+                street.visible = false;
+                } else {
+                //When você tem medo de f.. todo o code 
+                bg.visible = true;
+                city.visible = true;
+                phillyCityLights.visible = true;
+                light.visible = true;
+                streetBehind.visible = true;
+                street.visible = true;
+                }  
+
 				if(!ClientPrefs.lowQuality) {
 					var bg:BGSprite = new BGSprite('philly/sky', -100, 0, 0.1, 0.1);
 					add(bg);
-				}
+                }
 
 				var city:BGSprite = new BGSprite('philly/city', -10, 0, 0.3, 0.3);
 				city.setGraphicSize(Std.int(city.width * 0.85));
@@ -462,7 +494,30 @@ class PlayState extends MusicBeatState
 		}
 
 			case 'limo': //Week 4
-		if(ClientPrefs.cenoptim) {
+		if(ClientPrefs.optimizedMode) {
+            skyBG.visible = false;
+            limoMetalPole.visible = false;
+            bgLimo.visible = false;
+            limoCorpse.visible = false;
+            limoCorpseTwo.visible = false; //terminar isso aqui
+			grpLimoDancers.visible = false;
+			dancer.visible = false;
+			limoLight.visible = false;
+			grpLimoParticles.visible = false;
+			particle.visible = false;
+		} else {
+			skyBG.visible = true;
+            limoMetalPole.visible = true;
+            bgLimo.visible = true;
+            limoCorpse.visible = true;
+            limoCorpseTwo.visible = true; //terminar isso aqui
+			grpLimoDancers.visible = true;
+			dancer.visible = true;
+			limoLight.visible = true;
+			grpLimoParticles.visible = true;
+			particle.visible = true;
+		}
+	}
 				var skyBG:BGSprite = new BGSprite('limo/limoSunset', -120, -50, 0.1, 0.1);
 				add(skyBG);
 
@@ -512,9 +567,26 @@ class PlayState extends MusicBeatState
 				fastCar.active = true;
 				limoKillingState = 0;
 	}
+}
 
 			case 'mall': //Week 5 - Cocoa, Eggnog
-	if(ClientPrefs.cenoptim) {
+	if(ClientPrefs.optimizedMode) {
+		bg.visible = false;
+		upperBoppers.visible = false;
+		bgEscalator.visible = false;
+		tree.visible = false;
+		bottomBoppers.visible = false;
+		fgSnow.visible = false;
+		santa.visible = false;
+	} else {
+		bg.visible = true;
+		upperBoppers.visible = true;
+		bgEscalator.visible = true;
+		tree.visible = true;
+		bottomBoppers.visible = true;
+		fgSnow.visible = true;
+		santa.visible = true;	
+	}
 				var bg:BGSprite = new BGSprite('christmas/bgWalls', -1000, -500, 0.2, 0.2);
 				bg.setGraphicSize(Std.int(bg.width * 0.8));
 				bg.updateHitbox();
@@ -547,10 +619,19 @@ class PlayState extends MusicBeatState
 				santa = new BGSprite('christmas/santa', -840, 150, 1, 1, ['santa idle in fear']);
 				add(santa);
 				CoolUtil.precacheSound('Lights_Shut_off');
-}
+
 
 			case 'mallEvil': //Week 5 - Winter Horrorland
-if(ClientPrefs.cenoptim) {
+if(ClientPrefs.optimizedMode) {
+	bg.visible = false;
+	evilTree.visible = false;
+	evilSnow.visible = false;
+} else {
+	bg.visible = true;
+	evilTree.visible = true;
+	evilSnow.visible = true;
+}
+
 				var bg:BGSprite = new BGSprite('christmas/evilBG', -400, -500, 0.2, 0.2);
 				bg.setGraphicSize(Std.int(bg.width * 0.8));
 				bg.updateHitbox();
@@ -561,7 +642,7 @@ if(ClientPrefs.cenoptim) {
 
 				var evilSnow:BGSprite = new BGSprite('christmas/evilSnow', -200, 700);
 				add(evilSnow);
-}
+
 
 			case 'school': //Week 6 - Senpai, Roses
 				GameOverSubstate.deathSoundName = 'fnf_loss_sfx-pixel';
@@ -569,7 +650,23 @@ if(ClientPrefs.cenoptim) {
 				GameOverSubstate.endSoundName = 'gameOverEnd-pixel';
 				GameOverSubstate.characterName = 'bf-pixel-dead';
 			
-if(ClientPrefs.cenoptim) {
+if(ClientPrefs.optimizedMode) {
+	bgSky.visible = false;
+	bgSchool.visible = false;
+	bgStreet.visible = false;
+	fgTrees.visible = false;
+	bgTrees.visible = false;
+	treeLeaves.visible = false;
+	bgGirls.visible = false;
+} else {
+	bgSky.visible = true;
+	bgSchool.visible = true;
+	bgStreet.visible = true;
+	fgTrees.visible = true;
+	bgTrees.visible = true;
+	treeLeaves.visible = true;
+	bgGirls.visible = true;
+}
 				var bgSky:BGSprite = new BGSprite('weeb/weebSky', 0, 0, 0.1, 0.1);
 				add(bgSky);
 				bgSky.antialiasing = false;
@@ -630,7 +727,13 @@ if(ClientPrefs.cenoptim) {
 }
 
 			case 'schoolEvil': //Week 6 - Thorns
-if(ClientPrefs.cenoptim) {
+if(ClientPrefs.optimizedMode) {
+	bg.visible = false;
+	bgGhouls.visible = false;
+} else {
+	bg.visible = true;
+	bgGhouls.visible = true;
+}
 				GameOverSubstate.deathSoundName = 'fnf_loss_sfx-pixel';
 				GameOverSubstate.loopSoundName = 'gameOver-pixel';
 				GameOverSubstate.endSoundName = 'gameOverEnd-pixel';
