@@ -411,17 +411,19 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			}
-
-			case 'spooky': //Week 2
-				if(ClientPrefs.optimizedMode) { //Bora fangio
-                halloweenBG.visible = false;
-                halloweenWhite.visible = false;
-                } else {
-                //When você tem medo de f.. todo o code 
-                halloweenBG.visible = true;
-                halloweenWhite.visible = true;
-                }  
 	}
+}
+
+	case 'spooky': //Week 2
+				if(ClientPrefs.optimizedMode) { //Bora fangio
+					halloweenBG.visible = false;
+					halloweenWhite.visible = false;
+				} else {
+					halloweenBG.visible = true;
+					halloweenWhite.visible = true;
+				}
+			}	
+		}               
 		
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
 				add(halloweenBG);
@@ -434,7 +436,6 @@ class PlayState extends MusicBeatState
 				//PRECACHE SOUNDS
 				CoolUtil.precacheSound('thunder_1');
 				CoolUtil.precacheSound('thunder_2');
-			}
 
 			case 'philly': //Week 3
 				if(ClientPrefs.optimizedMode) { //Bora fangio
