@@ -414,7 +414,7 @@ class PlayState extends MusicBeatState
 	}
 }
 
-	case 'spooky': //Week 2
+case 'spooky': //Week 2
 				if(ClientPrefs.optimizedMode) { //Bora fangio
 					halloweenBG.visible = false;
 					halloweenWhite.visible = false;
