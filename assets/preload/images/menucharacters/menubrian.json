@@ -1,0 +1,11 @@
+{
+	"idle_anim": "Menu Brian M Brian",
+	"image": "Menu Brian",
+	"position": [
+		909,
+		401
+	],
+	"flipX": false,
+	"scale": 0.4,
+	"confirm_anim": "M Dad Idle"
+}
