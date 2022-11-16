@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Menu Brian.png">
+<SubTexture name="Menu Brian M Brian0000" x="0" y="851" width="402" height="837" frameX="-824" frameY="-232" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0001" x="0" y="851" width="402" height="837" frameX="-824" frameY="-232" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0002" x="1546" y="0" width="394" height="840" frameX="-824" frameY="-229" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0003" x="1546" y="0" width="394" height="840" frameX="-824" frameY="-229" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0004" x="1158" y="0" width="388" height="844" frameX="-824" frameY="-225" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0005" x="1158" y="0" width="388" height="844" frameX="-824" frameY="-225" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0006" x="772" y="0" width="386" height="846" frameX="-824" frameY="-223" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0007" x="772" y="0" width="386" height="846" frameX="-824" frameY="-223" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0008" x="0" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0009" x="0" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0010" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0011" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0012" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0013" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0014" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+<SubTexture name="Menu Brian M Brian0015" x="386" y="0" width="386" height="851" frameX="-824" frameY="-218" frameWidth="1980" frameHeight="1080" />
+</TextureAtlas>
