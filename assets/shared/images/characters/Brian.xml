@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="Brian.png" width="3825" height="1467">
+  <SubTexture name="Brian up0000" x="0" y="0"  width="340" height="720" frameX="-801" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0000" x="340" y="0"  width="356" height="722" frameX="-801" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right00010" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0005" x="1057" y="0"  width="357" height="722" frameX="-808" frameY="-207" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down00010" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0005" x="1758" y="0"  width="341" height="726" frameX="-800" frameY="-202" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0005" x="2099" y="0"  width="343" height="727" frameX="-799" frameY="-200" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0000" x="2442" y="0"  width="343" height="729" frameX="-799" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up00010" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0000" x="3128" y="0"  width="355" height="733" frameX="-809" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0000" x="3483" y="0"  width="342" height="733" frameX="-783" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left00010" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0005" x="342" y="722"  width="343" height="735" frameX="-790" frameY="-193" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0002" x="685" y="722"  width="355" height="738" frameX="-809" frameY="-190" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0004" x="1040" y="722"  width="354" height="740" frameX="-809" frameY="-187" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle00010" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0001" x="2442" y="0"  width="343" height="729" frameX="-799" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0002" x="2442" y="0"  width="343" height="729" frameX="-799" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0003" x="2442" y="0"  width="343" height="729" frameX="-799" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0004" x="2442" y="0"  width="343" height="729" frameX="-799" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down00011" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0006" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0007" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0008" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian down0009" x="1414" y="0"  width="344" height="724" frameX="-799" frameY="-203" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0001" x="3128" y="0"  width="355" height="733" frameX="-809" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle00011" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle00012" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle00013" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0006" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0007" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0008" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0009" x="1394" y="724"  width="352" height="743" frameX="-809" frameY="-184" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0003" x="685" y="722"  width="355" height="738" frameX="-809" frameY="-190" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian idle0005" x="1040" y="722"  width="354" height="740" frameX="-809" frameY="-187" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0001" x="3483" y="0"  width="342" height="733" frameX="-783" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0002" x="3483" y="0"  width="342" height="733" frameX="-783" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0003" x="3483" y="0"  width="342" height="733" frameX="-783" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0004" x="3483" y="0"  width="342" height="733" frameX="-783" frameY="-195" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left00011" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0006" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0007" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0008" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian left0009" x="0" y="722"  width="342" height="734" frameX="-798" frameY="-192" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0001" x="340" y="0"  width="356" height="722" frameX="-801" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0002" x="340" y="0"  width="356" height="722" frameX="-801" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0003" x="340" y="0"  width="356" height="722" frameX="-801" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0004" x="340" y="0"  width="356" height="722" frameX="-801" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right00011" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0006" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0007" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0008" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian right0009" x="696" y="0"  width="361" height="722" frameX="-811" frameY="-206" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0001" x="0" y="0"  width="340" height="720" frameX="-801" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0002" x="0" y="0"  width="340" height="720" frameX="-801" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0003" x="0" y="0"  width="340" height="720" frameX="-801" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0004" x="0" y="0"  width="340" height="720" frameX="-801" frameY="-208" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up00011" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0006" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0007" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0008" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+  <SubTexture name="Brian up0009" x="2785" y="0"  width="343" height="732" frameX="-799" frameY="-196" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>
