@@ -1,0 +1,76 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		130,
+		50
+	],
+	"scale": 1.3,
+	"animations": [
+		{
+			"loop_name": "Brian angry loop",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Brian angry0",
+			"anim": "angry",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Brian angry happy loop",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Brian angry happy0",
+			"anim": "angry happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Brian happy loop",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Brian happy0",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Brian happened loop",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Brian happened0",
+			"anim": "happened",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Brian neutral loop",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Brian neutral0",
+			"anim": "neutral",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Brian_Dialogue"
+}
