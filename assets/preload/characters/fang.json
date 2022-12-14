@@ -41,7 +41,7 @@
 			],
 			"anim": "singLEFT",
 			"fps": 12,
-			"name": "fang left",
+			"name": "fang right",
 			"indices": []
 		},
 		{
@@ -52,11 +52,11 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 12,
-			"name": "fang right",
+			"name": "fang left",
 			"indices": []
 		}
 	],
-	"no_antialiasing": false,
+	"no_antialiasing": true,
 	"image": "characters/fang",
 	"position": [
 		0,
@@ -76,3 +76,5 @@
 	"sing_duration": 6.1,
 	"scale": 1
 }
+// Me agradeça depois, Fang.
+//         - Newn
