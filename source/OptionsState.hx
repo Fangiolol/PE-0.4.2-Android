@@ -967,8 +967,12 @@ class PreferencesSubstate extends MusicBeatSubstate
 				switch(options[curSelected]) {
 					case 'Framerate':
 						ClientPrefs.framerate += add;
-						if(ClientPrefs.framerate < 1) ClientPrefs.framerate = 1;
-						else if(ClientPrefs.framerate > 1000) ClientPrefs.framerate = 1000;
+						// Acho melhor deixar isso aqui limitado novamente por causa de problemas com os frames.
+						// Caso o frame for muito baixo, ou seja, de 30 pra baixo, tudo fica muito lento.
+						// Caso o frame for muito alto, ou seja, de 240 pra cima, a tendência é ficar lento também.
+						// Um FPS alto tende a forçar mais o dispositivo enquanto tu tá jogando
+						if(ClientPrefs.framerate < 30) ClientPrefs.framerate = 30;
+						else if(ClientPrefs.framerate > 240) ClientPrefs.framerate = 240;
 
 						if(ClientPrefs.framerate > FlxG.drawFramerate) {
 							FlxG.updateFramerate = ClientPrefs.framerate;
